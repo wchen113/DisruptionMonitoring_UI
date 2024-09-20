@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.selection-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.selection-row > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.selection-row label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.selection-row select {
+    width: 100%;
+}
+
+.react-calendar {
+    color: #000; 
+}
+
+.react-calendar__tile {
+    color: #000;
+}
+
+.date-range {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.date-range > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-error {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.loading-message {
+    font-size: 16px;
+    color: #007bff;
+}
+
+@media (max-width: 600px) {
+    .selection-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .selection-row > div {
+        width: 100%;
+    }
+
+    .date-range {
+        flex-direction: column;
+    }
+}
